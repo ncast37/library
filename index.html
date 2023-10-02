@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container fog">
+        <div class="sidebar"></div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="">Link 1</a></li>
+                <li><a href="">Link 2</a></li>
+                <li><a href="">Link 3</a></li>
+            </ul>
+        </nav>
+        <div class="book-form hidden">
+            <form action="" method="post" id="bookForm" autocomplete="off">
+                <fieldset>
+                    <legend>Book Information</legend>
+                    <div>
+                        <label for="bookTitle">Title</label>
+                        <input type="text" id="bookTitle" name="bookTitle" placeholder="Title" required>
+                    </div>
+                    <div>
+                        <label for="bookAuthor">Author</label>
+                        <input type="text" id="bookAuthor" name="bookAuthor" placeholder="Author" required>
+                    </div>
+                    <div>
+                        <label for="pageCount"># of Pages</label>
+                        <input type="number" id="pageCount" name="pageCount" placeholder="#" required>
+                    </div>
+                </fieldset>
+                <!-- <fieldset>
+                    <legend>Have you read this book?</legend>
+                    <div>
+                        <label for="bookTitle"> <input type="radio" id="bookTitle" name="bookTitle">Yes</label>
+                        <label for="bookTitle"> <input type="radio" id="bookTitle" name="bookTitle"
+                                value="false">No</label>
+                    </div>
+                </fieldset> -->
+                <div>
+                    <button type="submit">SUBMIT</button>
+                    <button id='close-btn' type="button">CLOSE</button>
+                </div>
+            </form>
+        </div>
+        <div class="card-container">
+            <div id='addcard' class="card hover-rotate">
+                <h3>Add Book</h3>
+                <img src="./img/plus-circle.svg" alt="" class="filter-blue">
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+
+    <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
